@@ -1,12 +1,12 @@
-package hello.core.service;
+package hello.core.member;
 
-import hello.core.domain.member.Grade;
-import hello.core.domain.member.Member;
-import hello.core.repository.MemoryMemberRepository;
+import hello.core.member.Grade;
+import hello.core.member.Member;
+import hello.core.member.MemoryMemberRepository;
+import hello.core.member.MemberService;
+import hello.core.member.MemberServiceImpl;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class MemberServiceImplTest {
 
@@ -16,6 +16,7 @@ class MemberServiceImplTest {
     public void joinTest() throws Exception {
         //given
         Member memberA = new Member(1L, "memberA", Grade.BASIC);
+        Member memberB = new Member(1L, "memberA", Grade.BASIC);
 
         //when
         memberService.join(memberA);

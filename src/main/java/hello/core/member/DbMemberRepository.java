@@ -1,6 +1,4 @@
-package hello.core.repository;
-
-import hello.core.domain.member.Member;
+package hello.core.member;
 
 public class DbMemberRepository implements MemberRepository {
 

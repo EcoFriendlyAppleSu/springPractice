@@ -1,15 +1,10 @@
-package hello.core.domain.member;
+package hello.core.member;
 
-import hello.core.repository.MemoryMemberRepository;
-import hello.core.service.MemberService;
-import hello.core.service.MemberServiceImpl;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
-class MemberTest {
+class MemberServiceTest {
 
     @Test
     public void memberSaveTest() throws Exception {
