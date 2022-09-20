@@ -1,8 +1,12 @@
 package hello.core.member;
 
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Component;
+
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+@Component
 public class MemoryMemberRepository implements MemberRepository {
 
     // default로 hashCode를 비교하기 때문에 같은 객체라면 equals(), hashCode()를 사용하지 않아도 된다.
