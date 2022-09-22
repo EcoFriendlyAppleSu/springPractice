@@ -20,7 +20,7 @@ public class ConfigurationSingletonTest {
         // interface 로 데이터를 꺼내면 특정 Method를 사용할 수 없어
         OrderServiceImpl orderService = ac.getBean("orderService", OrderServiceImpl.class);
         MemberServiceImpl memberService = ac.getBean("memberService", MemberServiceImpl.class);
-        MemoryMemberRepository memoryMemberRepository = ac.getBean("memoryMemberRepository", MemoryMemberRepository.class);
+        MemoryMemberRepository memoryMemberRepository = ac.getBean("memberRepository", MemoryMemberRepository.class);
 
         //then
         System.out.println(orderService.getMemberRepository());

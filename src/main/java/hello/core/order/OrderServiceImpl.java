@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class OrderServiceImpl implements OrderService {
 
-    private final MemberRepository memberRepository;
+    private final MemberRepository memberRepository; //final : 무조건 값이 존재해야한다.
     private final DiscountPolicy discountPolicy;
 
     @Autowired
