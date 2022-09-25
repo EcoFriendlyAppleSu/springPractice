@@ -27,7 +27,9 @@ public class SingletonHasPrototypeTest {
 
         SingletonTestBean singletonTestBean2 = ac.getBean(SingletonTestBean.class);
         int logic2 = singletonTestBean2.logic();
-        assertThat(logic2).isEqualTo(2);
-    } // 처음 주입 받을 때만 PrototypeBean을 생성한다.
-    // 이는 찾기 힘든 오류를 만들어낸다.
+        // assertThat(logic2).isEqualTo(2);
+        assertThat(logic2).isEqualTo(1);
+    }
+    // Use prototype provider, Result = 1, 1
+    // else, Result = 1, 2
 }
